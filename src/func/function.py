@@ -81,6 +81,7 @@ class MathFunction:
 
         print(f"\nSolucion: {y}, Iteracion: {i}")
         # Mostrando grafica
+        plt.ylabel(funcion_solver)
         self.show(x_arr, function_lam)
 
     def show(self, x_arr, desp):
@@ -99,7 +100,6 @@ class MathFunction:
         plt.plot(x_arr, x_arr)
 
         plt.grid(True)
-        plt.ylabel("Y")
         plt.xlabel("X")
         plt.title(f"Punto fijo: {self.original_function}")
         plt.show()

@@ -23,7 +23,7 @@ def fn_normalizer(function):
         
     return fn
 
-functions = ["sin", "cos", "tan", "sec", "csc", "cot", "exp", "ln", "log"]
+functions = ["sin", "cos", "tan", "sec", "csc", "cot", "exp", "ln", "log", "sqrt", "acos", "asin", "atan"]
 regex_var = re.compile("[a-z]+")
 symbol = ord('x')
 def fn_segmentate(function):
